@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StackOverflow Lite | Login</title>
+    <link rel="stylesheet"  type="text/css" href="./css/style.css">
+</head>
+<body>
+       
+                <header>
+                      <div class="container">
+                              <div id="searching">
+                                      <form >
+                                             <label for="search">StackOverflow-Lite</label></hi>
+                                              <input type="search" name="search" id="search" placeholder="search" required> 
+                                      </form>
+                              </div>
+                              <nav>
+                                <ul>
+                                  <li><a href="index.html">Home</a></li>
+                                  <li><a href="question.html">Question ?</a></li>
+                                  
+                                  <li ><a  href="signup.html" >Sign Up</a></li>
+                                  <li  class="current"><a href="signin.html" >Sign In</a></li>
+                                  <li><a href="profile.html" >Profile</a></li>
+          
+                                </ul>
+                              </nav>
+                            </div>
+                  </header>
+
+            
+                        <div class="main">
+                            <h1>Login to  Your Account!<h1>
+                                <form action="profile.html" method="post" class="form-box">
+                                    <label for="username">Your username</label>
+                                    <div class="inp-row">
+                                        
+                                        <input type="text" id="username" name="username" class="inp" placeholder="username" required>
+                                    </div>
+                                    
+                                    <label for="password">Your password</label>
+                                    <div class="inp-row">
+                                        
+                                        <input type="password" id="psw" name="pass" class="inp" placeholder="your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                                    </div>
+                                   
+                                
+                                <input type="submit" name="submit" class="sub-btn" value="Sign In">
+                                
+                                </div>
+                            </form>
+                            <div class="path"></div>
+                        </div>
+                    
+                        <footer>
+                            <p>StackOverflow-Lite, Copyright &copy; 2018</p>
+                      </footer>
+        <script src="./Javascript/signin.js"></script>
+
+     </body>
+</html>
