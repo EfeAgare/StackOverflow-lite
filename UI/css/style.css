@@ -1,0 +1,496 @@
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#ffffff;
+  }
+  
+  /* Global * index.html*/
+  .container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+  }
+ 
+  
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+  }
+  
+  
+  section label{
+      display:block
+  }
+  
+  
+  /* Header **/
+  header{
+    background:rgb(100, 100, 240);
+    color:#f1f1f1;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:black 5px solid;
+
+  }
+  
+  header a{
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
+  }
+  
+  header li{
+    
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #searching{
+    float:left;
+  }
+  
+  
+  header nav{
+    float:right;
+    margin-top:10px;
+  }
+  
+  header .highlight, header .current a{
+    color:rgb(9, 9, 121);
+    
+  }
+  
+  a:hover{
+    cursor: pointer;
+    color:rgb(9, 9, 121);
+   
+  }
+  a {
+    text-decoration: none;
+    outline:none;
+    color: black;
+  }
+  #searching form input[type="search"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  /* case */
+  #case{
+    min-height:400px;
+    margin-top: 10px;
+    text-align:center;
+    color: black;
+  }
+  
+
+  #case h1{
+    margin-top:30px;
+    font-size:55px;
+    margin-bottom:10px;
+  }
+  
+  #case p{
+    font-size:20px;
+      }
+ 
+ section #sup{
+    max-height:100px;
+    position: absolute;;
+    right:450px;
+    text-align:justify;
+    color:black;
+    margin: 10px;
+ }
+  
+
+hr{
+    
+  width:100%;
+  border-bottom:rgb(100, 100, 240) 3px solid;
+  margin-top: 130px;
+  
+}
+
+
+
+/* Boxes */
+#boxes{
+    margin-top:20px;
+  }
+#boxes .box{
+    float:left;
+    text-align: center;
+    width:100%;
+    box-sizing: border-box;
+  }
+  box p{
+    width:100%
+  }
+  #boxes a{
+    width: 100%;
+    background-color: white;
+   text-decoration: #f8f8f8;
+    text-transform: uppercase;
+    font-size:16px;
+  }
+  /* footer */
+  footer{
+    padding:20px;
+    margin-top:0;
+    color:black;
+    background-color:rgb(100, 100, 240);
+    text-align: center;
+  }
+/*index page Ends*/
+
+/* Login Page Begins*/
+.main{
+  width: 500px;
+  background-color: #eee;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: 5px solid rgb(138, 138, 218);
+  box-shadow: 0 0 10px #000;
+}
+
+.form-box{
+  padding: 10px 25px 20px 25px;
+}
+.main h1{
+  text-align: center;
+}
+
+.form-box{
+  padding: 10px 25px 20px 25px;
+}
+.inp{
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 0 2px 1px #444;
+}
+.inp:focus{
+  outline: none;
+  box-shadow: 0 0 5px 1px #4169e1;
+  color: #191970;
+  font-weight: bold;
+}
+label{
+  font-size: 18px;
+  color: #191970;
+}
+
+.inp-row{
+  margin: 5px 0 10px 0;
+}
+.sub-btn{
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background: linear-gradient(#dc143c,#b22222);
+  cursor: pointer;
+  color: #fff;
+  border: none;
+}
+.sub-btn:hover{
+  background: linear-gradient(#b22222,#dc143c);
+}
+.sub-btn:focus{
+  outline: none;
+}
+.social{
+  width: 100%;
+  margin-top: 10px;
+}
+.social h3{
+  text-align: center;
+  color: #444;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.fb-icon{
+  background-color: #3b5998;
+  border-radius: 3px;
+  color: #fff;
+  float: left;
+  padding: 10px 40px 10px 20px;
+}
+.gp-icon{
+  background-color: #dd4b39;
+  border-radius: 3px;
+  color: #fff;
+  float: right;
+  padding: 10px 40px 10px 20px;
+}
+.sc-icon a{
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  width: 50%;
+  float: left;
+  line-height: 2;
+}
+.sc-icon a:hover{
+  opacity: 0.9;
+}
+.path{
+  clear: both;
+  width: 100%;
+  padding: 10px;
+  background-color: #eee;
+}
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+}
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "\/";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "x";
+}
+
+
+@media(max-width: 720px){
+  .main{
+    width: 90%;
+  }
+  .fb-icon,.gp-icon{
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+  }
+  .sc-icon img{
+    width: 25px;
+    height: 25px;
+    margin: 0 8px 0 0;
+    float: left;
+  }
+}
+
+/*question.html Begin Here*/ 
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+.headerChat {
+  background-color: #f8f8f8;
+  color: black;
+  padding: 15px;
+  text-align: center;}
+
+.headerChat .sub-btn{
+  background: #f1f1f1;
+  color:black;
+  float: left;
+  text-align: left
+  
+}
+.chat .sub-btn{
+  background: #f1f1f1;
+  color:black;
+  text-align: right;
+  outline: none;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: rgb(100, 100, 240);
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+  background-color:  rgb(100, 100, 240)9cc;
+}
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width: 100%;
+}
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 321px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .chat #answer{
+    background-color:#f1f1f1;;
+    width:90%;
+    float: right;
+    text-align: right;
+    right: 20px;
+    color:black;}
+  
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .chat #answer{
+    background-color:#f1f1f1;;
+    width:10%;
+    float: right;
+    text-align: right;
+    right: 20px;
+    color:black;
+  }
+}
+.chat {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.chat::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.answer{
+  background-color:#f1f1f1;;
+  width:10%;
+  float: right;
+  text-align: right;
+  right: 20px;
+  color:black;
+}
+/*Profile Page Starts Here*/
+/*first the column down*/
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  margin-top:15%;
+ 
+}
+
+/* Help One to Clear floats after the columns */
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+@media screen and (max-width: 700px) {
+  .column {
+      width: 100%;
+  }
+}
+.c1{background-color:#aaa;}
+.c2{background-color:#bbb;}
+.c3{background-color:#ccc;;}
+.c4{background-color:#ddd}
+
+/*Profile Side*/
+.profile {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-top: 50px;
+  margin-left:500px; ;
+  text-align: center;
+  
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+
+
