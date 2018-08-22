@@ -1,0 +1,40 @@
+{
+  "name": "stackoverflow-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./server/src/tests/ --compilers js:babel-register --require babel-polyfill --exit",
+    "dev:start": "nodemon server/src/index.js --exec babel-node",
+    "build": "babel ./server/src -d ./server/dist",
+    "start": "node server/dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EfeAgare/StackOverflow-lite.git"
+  },
+  "author": "Agare Efe Knowledge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EfeAgare/StackOverflow-lite/issues"
+  },
+  "homepage": "https://github.com/EfeAgare/StackOverflow-lite#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "express": "^4.16.3",
+    "express-validator": "^5.3.0",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.1.2",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.3"
+  }
+}
