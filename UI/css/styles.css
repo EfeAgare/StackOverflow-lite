@@ -192,12 +192,15 @@ a {
     font-weight: bold;
   }
   label{
-    font-size: 18px;
+    font-size: 12px;
     color: #191970;
+
   }
 #account a{
-    color:  #42A5F5
-    
+    color:  #42A5F5;
+}
+#account{
+    text-align: center;
 }
   
   .inp-row{
@@ -215,6 +218,7 @@ a {
     color: black;
     border-radius: 3px;
   }
+  
   .sub-btn:hover{
     background: #BDBDBD;
   }
@@ -338,4 +342,12 @@ text-align: center;
 #myemail{
     border-bottom: 3px  solid rgb(216, 214, 214);
 }
-
+.ask{
+    margin-left:25px;
+    }
+.text-center{
+    font-size: 18px;
+  }
+.recent{
+    margin-left:15px;
+}
