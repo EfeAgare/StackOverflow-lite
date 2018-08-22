@@ -27,3 +27,20 @@ describe('/GET/:questionId', () => {
       });
   });
 });
+
+describe('/POST', () => {
+  it('Should post a new question', (done) => {
+    chai.request(app)
+      .post('/api/v1/questions')
+      .send({
+        title: 'what is newton\'s Law',
+        questionBody: ' the law in school?',
+      })
+      .end((err, res) => {
+        assert.equal(res.status, 200);
+        assert.typeOf(res.body, 'object');
+
+        done();
+      });
+  });
+});
