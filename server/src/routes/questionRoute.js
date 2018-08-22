@@ -9,5 +9,7 @@ questionRoute.route('/questions')
 questionRoute.route('/questions/:questionId')
  .get(questionController.getAQuestion);
 
+ questionRoute.route('/questions/:questionId/answers')
+.post(questionController.addAnswer);
 
 module.exports=questionRoute;

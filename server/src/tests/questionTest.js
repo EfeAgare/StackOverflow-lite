@@ -44,3 +44,19 @@ describe('/POST', () => {
       });
   });
 });
+
+describe('/POST', () => {
+  it('Should add an answer', (done) => {
+    chai.request(app)
+      .post('/api/v1/questions/2/answers')
+      .send({
+        answer: 'what is newton\'s Law',
+
+      })
+      .end((err, res) => {
+        assert.equal(res.status, 200);
+        assert.typeOf(res.body, 'array');
+        done();
+      });
+  });
+});
