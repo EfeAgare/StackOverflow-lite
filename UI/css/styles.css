@@ -1,0 +1,341 @@
+
+body{
+    font-family: Tahoma;
+    font-family: 'Teko', sans-serif;
+	font-family: 'Play', sans-serif;
+    color:black;
+    letter-spacing: 1px;
+    background-color:white;
+}
+
+.question_div h1{
+text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 25%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.clearfix {
+overflow: auto;
+}
+
+.header {
+    background-color: whitesmoke;
+    color:black;
+    padding: 15px;
+    overflow: hidden;
+    width:100%
+
+}
+@media screen and (max-width: 500px) {
+    
+    .header-right {
+      float: none;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+  }
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #EEEEEE;
+    color: black;
+    cursor: pointer;
+    line-height: 25px;
+    text-align: center;
+}
+
+.menu ul :hover {
+    background-color:#BDBDBD;
+    width:100%;
+}
+.question_div ul{
+    list-style-type: none;
+    padding: 0;
+    border-bottom:100% solid;
+}
+.menu .current  a{
+    color:#9E9E9E;
+    font-weight: 60px solid;
+      }
+
+.question_div li{
+    padding: 10px;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 10px;
+    overflow: auto;
+}
+li span{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    
+/* font-weight: bold; */
+}
+.question_div h3{
+    text-align:center
+
+}
+.text-center {
+    text-align: center
+}
+.answer{
+    float: right;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    margin: 4px;
+    padding:3px;
+    font-size: 70%;
+}
+
+.answer:hover{
+    background:#9E9E9E;
+}
+.vote{
+    font-size: 70%;
+    float: right;
+    border:1px solid;
+    border-radius: 3px;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    margin: 4px;
+}
+
+.vote:hover{
+    background:#9E9E9E;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    line-height: 25px;
+  }
+  
+  /* Login Page begins here */
+.main{
+    width: 500px;
+    border: 5px solid white;
+    box-shadow: 0 0 5px #BDBDBD;
+    margin: 60px auto;
+    border-radius: 5px;
+    
+  }
+  
+  .form-box{
+    padding: 20px 25px 20px 25px;
+
+  }
+  .main h1{
+    text-align: center;
+  }
+  .main p{
+   font-size: 12px;
+   display: block;
+
+  }
+  
+ 
+  
+  .inp{
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    margin-top:10px;
+    border: none;
+    
+    box-shadow: 0 0 2px 1px #444;
+  }
+  .inp:focus{
+    outline: none;
+    box-shadow: 0 0 5px 1px #4169e1;
+    color: #191970;
+    font-weight: bold;
+  }
+  label{
+    font-size: 18px;
+    color: #191970;
+  }
+#account a{
+    color:  #42A5F5
+    
+}
+  
+  .inp-row{
+    margin: 5px 0 10px 0;
+  }
+  
+  .sub-btn{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: black;
+    border-radius: 3px;
+  }
+  .sub-btn:hover{
+    background: #BDBDBD;
+  }
+  .sub-btn:focus{
+    outline: none;
+  }
+  
+  /* The message box is shown when the user clicks on the password field */
+  
+
+ [ class*="col-"] {
+    width: 100%;
+  }
+  @media only screen and (min-width: 321px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 25%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    
+    
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-10 {width: 25%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+  }
+  
+  
+  @media(max-width: 720px){
+    .main{
+      width: 90%;
+    }
+  }
+  /*ask Page*/
+  
+  input[type=text],  textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  @media screen and (max-width: 600px) {
+     input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  .question_div h3{
+      text-align: left;
+  }
+  /*Profile Page*/
+ .profile {
+   
+
+    margin: 0 Auto;
+    margin-top: 2%;
+    text-align:center;
+    
+  }
+  
+  
+   .title {
+    color: grey;
+    font-size: 18px;
+    text-align: center
+  }
+   img {
+    border-radius: 50%;
+    min-width: 50px;
+    min-height: 0px;
+    
+   }
+.responsive {
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+table{
+width:100%;
+margin-top:30Px;
+margin-bottom: 30px;
+
+}
+th, td {
+    border: 1px solid  rgb(216, 214, 214);
+}
+tr,td{
+padding:10px;
+text-align: center;
+}
+#myname{
+    border-bottom: 3px solid rgb(216, 214, 214);
+}
+#myemail{
+    border-bottom: 3px  solid rgb(216, 214, 214);
+}
+
