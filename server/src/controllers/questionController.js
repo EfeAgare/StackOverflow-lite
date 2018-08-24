@@ -48,5 +48,18 @@ class QuestionController {
     return res.status(200).json({ data: newQuestion });
   }
 
+  /**
+   * This method add answers for a particular question
+   * @param  {object} req -
+   * @param {object} res -
+   * @returns {array} request
+   */
+  static addAnswer(req, res) {
+    const questionId = parseInt(req.params.questionId, 10);
+    const question = questions.filter(question => {return question.id === questionId});
+    question[0].answers.push(req.body.answer);
+
+    res.status(200).json(question);
+  }
 }
 export default QuestionController;
