@@ -15,3 +15,15 @@ describe('/GET', () => {
   });
 });
 
+
+describe('/GET/:questionId', () => {
+  it('Fetch a Particular question', (done) => {
+    chai.request(app)
+      .get('/api/v1/questions/0')
+      .end((err, res) => {
+        assert.equal(res.status, 200);
+        assert.typeOf(res.body, 'array');
+        done();
+      });
+  });
+});
