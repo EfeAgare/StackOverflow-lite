@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "8.11.x"
+  },
   "scripts": {
     "test": "mocha ./server/src/tests/ --compilers js:babel-register --require babel-polyfill --exit",
     "dev:start": "nodemon server/src/index.js --exec babel-node",
     "build": "babel ./server/src -d ./server/dist",
+    "heroku-postbuild": "npm run build",
     "start": "node server/dist/index.js"
   },
   "repository": {
