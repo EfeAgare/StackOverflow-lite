@@ -4,6 +4,7 @@ const questionRoute = express();
 
 questionRoute.route('/questions')
 .get(questionController.getAllQuestions)
+.post(questionController.addQuestions);
 
 questionRoute.route('/questions/:questionId')
  .get(questionController.getAQuestion);
