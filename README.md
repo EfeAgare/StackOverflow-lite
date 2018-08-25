@@ -64,4 +64,3 @@ If you only want to access the completed work, you will find the link to the hos
 <hr>
 
 You can access the app here https://stackliteoverflow.herokuapp.com/api/v1/
-
