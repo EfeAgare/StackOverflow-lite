@@ -45,7 +45,7 @@ If you only want to access the completed work, you will find the link to the hos
   </tr>
   <tr>
       <td>GET</td>
-      <td>/api/v1/questions/<questionId></td>
+      <td>/api/v1/questions/:questionId</td>
       <td>Fetch a specific question</td>
   </tr>
    <tr>
@@ -55,7 +55,7 @@ If you only want to access the completed work, you will find the link to the hos
   </tr>
   <tr>
       <td>POST</td>
-      <td>/api/v1/questions/<questionId>/answer</td>
+      <td>/api/v1/questions/:questionId/answers</td>
       <td>Add an answer</td>
   </tr>
    
@@ -64,6 +64,4 @@ If you only want to access the completed work, you will find the link to the hos
 <hr>
 
 You can access the app here    
-You can also access the API documentation at   
-
 
