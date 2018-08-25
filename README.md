@@ -9,9 +9,9 @@ StackOverflow-lite app is an application platform where people can ask questions
 ## How it works 
 * Users can:
     * Get all questions
-    * Get a particular question
-    * Post a question to receive answers
-    * Post answer to question(s)
+    * Get a question
+    * Post a question
+    * Post an answer to a question
     
 ## Technologies
   * Nodejs(ES6)
@@ -19,8 +19,11 @@ StackOverflow-lite app is an application platform where people can ask questions
   * NPM
   * Express
   * Babel
+## Linting Library
+  * Eslint
+  
 ## Installation
-  Ensure you have the technologies installed then you can clone this repository in your local machine. Afterwards, run <code> npm install </code> and run <code> npm run start:dev </code> for a quick start. Or you may build first, using <code> npm run build </code> then run <code> npm start </code>.
+  Ensure you have the technologies installed then you can clone this repository in your local machine. Afterwards, run <code> npm install </code>  and run  <code> npm run start:dev </code>  for a quick start. Or you may build first, using <code> npm run build </code> then run <code> npm start </code>.
 If you only want to access the completed work, you will find the link to the hosted work at the bottom of this readme, you don't have to clone this repository!
 
 ## Test
@@ -45,10 +48,22 @@ If you only want to access the completed work, you will find the link to the hos
       <td>/api/v1/questions/<questionId></td>
       <td>Fetch a specific question</td>
   </tr>
-
+   <tr>
+      <td>POST</td>
+      <td>/api/v1/questions</td>
+      <td>Add a question</td>
+  </tr>
+  <tr>
+      <td>POST</td>
+      <td>/api/v1/questions/<questionId>/answer</td>
+      <td>Add an answer</td>
+  </tr>
+   
 </table>
 <br/>
 <hr>
 
-You can access the app here 
-You can also access the API documentation at 
+You can access the app here    
+You can also access the API documentation at   
+
+
